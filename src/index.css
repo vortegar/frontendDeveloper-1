@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+/**********Tag-Person**********/
+.cards-head{
+  
+  margin-left: 0em;
+  margin-top: 0em;    
+}
+.container-person {
+  margin: 1em;
+  position: relative;
+  height: 230px;
+}
+
+#container-info-person{
+  background-color: hsl(246, 80%, 60%);
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.container-info-person-show{
+  display: flex;
+}
+
+.person-img{
+  margin-left: 2em;
+  width: 25%;
+  margin-top: 2em; 
+  padding: 0;
+  border: solid 0.2em white;
+  border-radius: 50%;
+}
+.container-info-person-text{
+  margin-right: 1em;
+  align-items: center;
+}
+.container-info-person-text p{
+margin-bottom: 0 ;
+padding-bottom: 0;
+margin-top: 2.8em;
+margin-left: 1.5em;
+}
+
+.container-name{
+  display: flex;
+  margin-top: 0 ;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-left: 1.1em;
+}
+
+
+.container-name h2:nth-child(1){
+  margin-top: 0 ;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.container-name h2:nth-child(2){
+  margin-top: 0 ;
+  font-weight: bold;
+  font-size: 1em;
+  padding-left: 0.2em;
+}
+
+.container-date{
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background-color: #1d204b;
+  border-radius: 0 0 15px 15px;
+  height: 80px;
+}
+.container-date-info{
+  display: flex;
+  justify-content: space-between;
+}
+.container-date p {
+  line-height: 3.5em;
+  color: hsl(238, 32%, 56%);
+}
+
+.container-date p:hover{
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+.container-date p:nth-child(1) {
+  margin-left: 1em;
+}
+
+.container-date p:nth-child(3) {
+  margin-right: 1em;
+}
+
+
+@media (min-width: 740px) {
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 400px 850px;
+
+
+  }
+
+
+  .cards-head{
+    width: 150%;
+    margin-left: 9em;
+    margin-top: 6em;    
+  }
+  .container-person {
+    height: 450px;
+  }
+  
+  #container-info-person{
+    width: 38%;
+    height: 70%;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .container-info-person-show{
+    flex-direction: column;
+  }
+
+  .container-info-person-text p{
+    margin-top: 1.5em;
+    font-size: 0.8em;
+    margin-left: 2em;
+    }
+
+    .container-name{
+      flex-direction: column;      
+    }
+    
+    .container-name h2:nth-child(1){
+      font-size: 1.4em;
+      padding-left: 0.2em;
+      margin-top: 0.5em;
+    }
+    
+    .container-name h2:nth-child(2){
+      font-size: 1.4em;
+      margin-top: -0.8em; 
+    }
+    .container-date{
+      width: 38%;
+      bottom: 20px;
+      height: 150px;
+    }
+
+    .container-date-info{
+      flex-direction: column;
+    }
+
+    .container-date p:hover{
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+    }
+    .container-date p {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 2em;
+      font-size: 0.8em;
+    }
+
+    .container-date p:nth-child(1) {
+      margin-top: 3.2em;
+    }
+
+    .container-date p:nth-child(2), .container-date p:nth-child(3) {
+      margin-left: 1em;
+    }
+  
+    
+    
+}
+
+/**********Tags**********/
+.cards-info{
+  margin-top: 0;
+}
+.container {
+  margin: 1em;
+  position: relative;
+  height: 170px;
+}
+
+
+#container-color{
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  top: 10px;
+  left: 0;
+}
+
+
+
+.Light-red{
+  background-color: hsl(15, 100%, 70%) ;
+  text-align: end;
+}
+.Soft-blue{
+  background-color: hsl(195, 74%, 62%) ;
+  text-align: end;
+}
+.Light-red-study {
+  background-color: hsl(348, 100%, 68%);
+  text-align: end;
+}
+.Lime-green{
+  background-color: hsl(145, 58%, 55%);
+  text-align: end;
+}
+.Violet {
+  background-color: hsl(264, 64%, 52%);
+  text-align: end;
+}
+.Soft-orange{
+  background-color: hsl(43, 84%, 65%);
+  text-align: end;
+}
+
+.container-info{
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background-color: #1d204b;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-info:hover{
+  background-color: hsl(236, 41%, 34%);
+}
+
+.info-title-time{
+  display: flex;
+  width: 100%;
+}
+
+.info-time-elapse{
+  display: flex;
+}
+
+.info-tittle {
+  font-weight: bold;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+
+.info-time{
+  padding-left: 0.5em;
+  font-size: 2em;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+
+.info-spread {
+  height: 5px;
+  margin-top: 1.8em;
+  position: absolute;
+  right: 0;
+}
+.info-spread:hover{
+  cursor: pointer;
+}
+
+.info-date{
+  right: 1em;
+  position: absolute;
+}
+
+img{
+  padding-right: 1em;
+}
+
+@media (min-width: 740px) {
+  .cards-info{
+    margin-top: 6em;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-gap: 30px;
+  }
+  .container {
+    margin: 1em;
+    position: relative;
+    height: 170px;
+  }
+  
+  
+  #container-color{
+    height: 70%;
+    width: 120%;
+    top: 10px;
+    left: 0;
+  }
+
+  .container-info{
+    width: 120%;
+    height: 75%;
+  }
+  .container {
+    height: 190px;
+  }
+
+  .info-time-elapse{
+    flex-direction: column;
+  }
+
+  .info-date{
+    position: relative;
+    margin-top: 0;
+    font-size: 0.7em;
+    padding-left: 2.5em;
+  }
+  .info-time{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding-left: 0.5em ;
+    font-weight: bold;
+  }
+}
